@@ -1,0 +1,44 @@
+\documentclass[review,1p,number,sort&compress]{elsarticle}
+
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{comment}
+
+\usepackage{lineno}
+\linenumbers
+
+\begin{document}
+
+\title{Millikelvin precise temperature monitoring system for the ProtoDUNE-SP liquid argon detector at CERN}
+
+\input{authorlist.tex}
+\date{\today}
+
+\begin{abstract}
+The precise monitoring of temperatures ---to the level of a few milli-Kelvin--- is crucial for the operation of large-scale cryostats. In particular, the performance of Liquid Argon Time Projection Chambers ---such as those planned for DUNE--- heavily relies on proper argon purification and mixing, which can be characterized by a sufficiently dense grid of high-precision temperature probes. In this article, a novel technique for the cross-calibration of Resistance Temperature Detectors (RTDs) in cryogenic liquids (argon and nitrogen) is presented, obtaining an unprecedented precision of 2.5 mK.
+%Precise monitoring of temperatures to the level of a few millikelvin has been identified as crucial for understanding the properties and behaviour of cryogenic liquids in large cryostats. In particular, the performance of Liquid Argon Time Projection Chambers, as the ones of the DUNE experiment, heavily relies on proper argon purification and mixing, which can be characterized using a sufficiently dense grid of high-precision temperature probes. In this article, a novel technique for the cross-calibration of Resistance Temperature Detectors (RTDs) in cryogenic liquids (argon and nitrogen) is presented, obtaining an unprecedented precision of 2.5 mK.
+\end{abstract}
+
+\begin{keyword}
+Detectors, Liquid Argon, Cryogenics, Temperature, RTD, Purity, Computational Fluid Dynamics
+\end{keyword}
+
+\maketitle
+
+\input{./intro.tex}
+\input{protodune_tms.tex}
+\input{electronics.tex}
+\input{old_setup.tex}
+\input{new_setup.tex}
+\input{conclusions.tex}
+\input{acknowledgments.tex}
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{bibliography}
+
+\end{document}
