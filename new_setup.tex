@@ -1,16 +1,16 @@
 \section{Re-calibration after ProtoDUNE-SP operation}
 \label{sec:new_calib}
 
-After ProtoDUNE-SP decommissioning in 2020, temperature sensors were disconnected from the TGM and re-calibrated several times (see Table \ref{tab:calib}), using both LAr and LN2 as cryogenic liquid. The comparative analysis of those re-calibrations not only offers insights into the long-term stability of the sensors but also elucidates any potential dependencies on the choice of the cryogenic liquid. Although DUNE will use LAr, massive RTD calibration would benefit from using LN2, given its higher accessibility and lower cost in Spain. 
+After ProtoDUNE-SP decommissioning in 2020, temperature sensors were disconnected from the TGM and re-calibrated several times (see Table \ref{tab:calib}), using both LAr and LN2 as cryogenic liquid. The comparative analysis of those re-calibrations not only offers insights into the long-term stability of the sensors but also elucidates any potential dependencies on the choice of the cryogenic liquid. Although DUNE will use LAr, massive RTD calibration would benefit from using LN2, given its higher accessibility and lower cost in Spain.
 
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{l c c}
 date & cryogenic liquid & \# sensors in capsule  \\ \hline
-March 2018     &   LAr    &  4  \\ 
-February 2022  &   LN2    & 14  \\ 
-March 2023     &   LN2    & 14  \\ 
-July 2023      &   LAr    & 14  \\ 
+March 2018     &   LAr    &  4  \\
+February 2022  &   LN2    & 14  \\
+March 2023     &   LN2    & 14  \\
+July 2023      &   LAr    & 14  \\
 \end{tabular}
 \end{center}
 \caption{Calibration runs with indication of the date, the cryogenic liquid used and the number of sensors inside the capsule.}
@@ -23,24 +23,24 @@ In this section, a description of the setup used for these new calibrations, the
 \subsection{Evolution of the calibration setup}
 \label{sec:new_calib_setup}
 
-The Horizontal Drift far detector module will have more than 500 precision sensors \cite{dune_tdr4}, making the use of the calibration setup impractical for calibration purposes, since it can only accommodate four sensors simultaneously. Significant modifications have been introduced in order to increase this number to twelve, while maintaining the calibration precision achieved during the 2018 calibration campaign. This was accomplished by positioning sensors at the same height, to avoid any potential vertical gradient, and following a cylindrical configuration, under the assumption that convection inside the capsule has cylindrical symmetry. 
-This symmetry is also kept outside the capsule in all concentric cryogenic containers, having added a fourth independent cryogenic volume which should further reduce convection inside the inner capsule. 
-This notable advancement greatly streamlines the calibration process and serves to reduce both statistical and systematic errors associated with the procedure. Fig. \ref{fig:newSetup} shows the different elements of the new calibration setup, which are described below: 
+The Horizontal Drift far detector module will have more than 500 precision sensors \cite{dune_tdr4}, making the use of the calibration setup impractical for calibration purposes, since it can only accommodate four sensors simultaneously. Significant modifications have been introduced in order to increase this number to twelve, while maintaining the calibration precision achieved during the 2018 calibration campaign. This was accomplished by positioning sensors at the same height, to avoid any potential vertical gradient, and following a cylindrical configuration, under the assumption that convection inside the capsule has cylindrical symmetry.
+This symmetry is also kept outside the capsule in all concentric cryogenic containers, having added a fourth independent cryogenic volume which should further reduce convection inside the inner capsule.
+This notable advancement greatly streamlines the calibration process and serves to reduce both statistical and systematic errors associated with the procedure. Fig. \ref{fig:newSetup} shows the different elements of the new calibration setup, which are described below:
 
-\begin{itemize} 
+\begin{itemize}
     \item A polystyrene box with dimensions $55\times35\times30$ cm$^{3}$ and $4.5$ cm thick walls with a dedicated cover of the same material.
     \item Extruded polystyrene rectangles with a cylindrical hole of $12.5$ cm diameter and $25$ cm height, to conform the inner volume.
     \item A PTFE container with $12.5$ cm diameter, $25$ cm height and $2$ mm thick walls to fit in the hole left in the box. The approximate volume is $2$ L.
     \item A 3D printed PLA cylinder with two independent concentric volumes, placed inside the PTFE container.
     \item A cylindrical aluminum capsule to be placed in the inner volume of the PLA cylinder. It has $7$ cm diameter,  $14$ cm height and $1$ mm thick walls.
-    \item A 3D printed PLA holder for 14 sensors, 12 of them forming a circle (the `corona') and 2 of them in the center, to be used as references. This support can be attached to the aluminum capsule at a fixed height. Cables are naturally extracted from the top of the assembly. A detailed view of this holder can be found in Fig. \ref{fig:newSetup}. 
-    \item The readout electronics, described in Sec. \ref{sec:readout} have been retained from the previous setup. 
-    \item A more cost effective cable with similar performance has been used. Produced by Tempsens \cite{tempsens}, it has four twisted cables instead of two separated twisted pairs and an additional Kapton insulation layer between the shielding mesh and the four conductors. Its diameter is 2.7 mm.   
+    \item A 3D printed PLA holder for 14 sensors, 12 of them forming a circle (the `corona') and 2 of them in the center, to be used as references. This support can be attached to the aluminum capsule at a fixed height. Cables are naturally extracted from the top of the assembly. A detailed view of this holder can be found in Fig. \ref{fig:newSetup}.
+    \item The readout electronics, described in Sec. \ref{sec:readout} have been retained from the previous setup.
+    \item A more cost effective cable with similar performance has been used. Produced by Tempsens \cite{tempsens}, it has four twisted cables instead of two separated twisted pairs and an additional Kapton insulation layer between the shielding mesh and the four conductors. Its diameter is 2.7 mm.
 \end{itemize}
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.3\textwidth, 
+{\includegraphics[width=0.3\textwidth,
 trim=0cm 4cm 0cm 4.7cm, clip]{images/figure_14_a.jpg}}
 {\includegraphics[width=0.3\textwidth, trim=0cm 4cm 0cm 7cm, clip]{images/figure_14_b.jpg}}
 {\includegraphics[width=0.3\textwidth, trim=0cm 4cm 0cm 7cm, clip]{images/figure_14_c.jpg}}
@@ -52,7 +52,7 @@ trim=0cm 4cm 0cm 4.7cm, clip]{images/figure_14_a.jpg}}
 \subsection{Calibration procedure}
 \label{sec:new_calib_procedure}
 
-The sensor support was originally designed to accommodate two reference sensors in the center (see Fig. \ref{fig:newSetup}), enabling both the reference and tree calibration methods. However, it was soon observed that temperature variations between corona and reference sensors were significantly larger than those between any two corona sensors. This effect was attributed to the convection happening inside the capsule, which favour sensors distributed simmetrically with respect to the geometry of the system. This can be observed in Fig. \ref{fig:refMethodDumpingJustification}-left, where the offset between two corona sensors is nearly constant in time in four independent measurements, and in Fig. \ref{fig:refMethodDumpingJustification}-right, where the offset between a corona and a reference sensor shows a more chaotic behaviour. Consequently, only the `tree' calibration method was considered during the calibrations after ProtoDUNE-SP decommissioning. 
+The sensor support was originally designed to accommodate two reference sensors in the center (see Fig. \ref{fig:newSetup}), enabling both the reference and tree calibration methods. However, it was soon observed that temperature variations between corona and reference sensors were significantly larger than those between any two corona sensors. This effect was attributed to the convection happening inside the capsule, which favour sensors distributed simmetrically with respect to the geometry of the system. This can be observed in Fig. \ref{fig:refMethodDumpingJustification}-left, where the offset between two corona sensors is nearly constant in time in four independent measurements, and in Fig. \ref{fig:refMethodDumpingJustification}-right, where the offset between a corona and a reference sensor shows a more chaotic behaviour. Consequently, only the `tree' calibration method was considered during the calibrations after ProtoDUNE-SP decommissioning.
 
 \begin{figure}[htbp]
 \centering
@@ -72,20 +72,33 @@ The new calibration tree, shown in Fig. \ref{fig:newCalibrationStrategy}, contem
 \label{fig:newCalibrationStrategy}
 \end{figure}
 
-The experimental procedure is similar to the one presented in Sec. \ref{sec:old_calib}, with two small differences. First, the several concentric vessels are cooled down for 40 minutes before introducing the aluminum capsule for the first time in a day, slightly improving the results of the first calibration run. Second, the warm up process is accelerated using a heat gun, avoiding the use of water.   
+The experimental procedure is similar to the one presented in Sec. \ref{sec:old_calib}, with two small differences. First, the several concentric vessels are cooled down for 40 minutes before introducing the aluminum capsule for the first time in a day, slightly improving the results of the first calibration run. Second, the warm up process is accelerated using a heat gun, avoiding the use of water.
 
 %----------------------------------------------------------
 \subsection{Calibration results}
 \label{sec:new_calib_results}
 
-Using the same logic presented in Sec.~\ref{sec:calib_procedure}, the offset between any pair of sensors can be computed by following a certain path in the tree. To minimise the statistical error, all offsets are referenced to a sensor in the second round, 40525, chosen as reference. The previous reference, 39656, was discarded since it was damaged during ProtoDUNE-SP decommissioning. Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. As expected, this error is larger than in the 2018 calibration mainly due to the increased size of the inner volume and the larger distance between sensors. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the statistical error as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.%, indicating that convection inside the capsule should be similar for both liquids.     
+Due to the fact that three sensors per set are raised to form the second-round set, exist several combinations of those raised sensors in order to compute a certain offset between a given pair of sensors. Each of these combinations is called a path on the calibration tree, or simply a \textit{path}. There are $3^2$ paths that serve to compute the offset between a given pair of sensors, at first order. One can arbitrarily chose any sensor as absolute reference to compute all the other offsets with respect to this one. If one wisely choose the absolute reference to be a sensor that has been raised in any of the 4 first-round sets, the number of independent paths for a given pair of sensors reduces to only 3. The chosen absolute reference is the 40525 for the rest of this analysis.
+
+For each of the paths, the error on the offset can be computed by quadratically adding the individual errors on each of the terms contributing to that specific offset. Then, the average path offset is computed as the weighted mean of the different paths by considering the different path offsets errors that are involved. Finally, the error on the average path offset is computed as the standard deviation of the involved path offsets.
+
+Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. As expected, this error is larger than in the 2018 calibration mainly due to the increased size of the inner volume and the larger distance between sensors. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the statistical error as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.
+
+% Using the same logic presented in Sec.~\ref{sec:calib_procedure}, the offset between any pair of sensors can be computed by following a certain path in the tree. To minimise the statistical error, all offsets are referenced to a sensor in the second round, 40525, chosen as reference. The previous reference, 39656, was discarded since it was damaged during ProtoDUNE-SP decommissioning. Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. As expected, this error is larger than in the 2018 calibration mainly due to the increased size of the inner volume and the larger distance between sensors. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the statistical error as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.%, indicating that convection inside the capsule should be similar for both liquids.
+
+% \begin{figure}[htbp]
+% \centering
+% {\includegraphics[width=0.33\textwidth]{images/figure_17_a.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_17_b.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_17_c.pdf}}
+% \caption{Statistical error distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023, Right:LAr-2023}
+% \label{fig:newCalib_stat}
+% \end{figure}
 
 \begin{figure}[htbp]
-\centering
-{\includegraphics[width=0.33\textwidth]{images/figure_17_a.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_17_b.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_17_c.pdf}}
-\caption{Left: Statistical error distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023, Right:LAr-2023}
-\label{fig:newCalib_stat}
-\end{figure}
+    \centering
+    {\includegraphics[width=0.33\textwidth]{images/LN22.pdf}}{\includegraphics[width=0.33\textwidth]{images/LN23.pdf}}{\includegraphics[width=0.33\textwidth]{images/Lar2023.pdf}}
+    \caption{Statistical error distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023, Right:LAr-2023}
+    \label{fig:newCalib_stat}
+    \end{figure}
 
 \begin{figure}[htbp]
 \centering
@@ -94,14 +107,14 @@ Using the same logic presented in Sec.~\ref{sec:calib_procedure}, the offset bet
 \label{fig:newCalib_statVsChannel}
 \end{figure}
 
-Comparison between LN2 and LAr calibrations can also be used to understand the dependence of the calibration constants on the absolute temperature. Fig.~\ref{fig:comp_newCalib} shows the difference between the calibration constants obtained in two calibrations. The RMS of the distribution is lower when comparing two calibrations in the same liquid (LN2 in this case). However no bias is observed when comparing calibrations in two different liquids, indicating that offsets are insensitive to a 10 K variation in absolute temperature.  
+Comparison between LN2 and LAr calibrations can also be used to understand the dependence of the calibration constants on the absolute temperature. Fig.~\ref{fig:comp_newCalib} shows the difference between the calibration constants obtained in two calibrations. The RMS of the distribution is lower when comparing two calibrations in the same liquid (LN2 in this case). However no bias is observed when comparing calibrations in two different liquids, indicating that offsets are insensitive to a 10 K variation in absolute temperature.
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.32\textwidth]{images/figure_19_a.pdf}}
-{\includegraphics[width=0.32\textwidth]{images/figure_19_b.pdf}}
-{\includegraphics[width=0.32\textwidth]{images/figure_19_c.pdf}}
-\caption{Difference between offsets for two calibrations. Left: LN2-2022 and LN2-2023. Middle: LN2-2022 and LAr-2023. Right:  LN2-2023 and LAr-2023.}
+{\includegraphics[width=0.32\textwidth]{images/LN2023-LN2022.pdf}}
+{\includegraphics[width=0.32\textwidth]{images/Lar2023-LN2022.pdf}}
+{\includegraphics[width=0.32\textwidth]{images/Lar2023-LN2023.pdf}}
+\caption{Difference between offsets for two calibrations. Left: LN2-2023 and LN2-2022. Middle: LAr-2023 and LN2-2022. Right:  LAr-2023 and LN2-2023.}
 \label{fig:comp_newCalib}
 \end{figure}
 
@@ -124,10 +137,10 @@ Fig. \ref{fig:LAr2018AllDiff} shows the distribution of the offset difference be
 \begin{center}
 \begin{tabular}{l c c c c}
          & LAr-2018 & LN2-2022 & LN2-2023 & LAr-2023  \\ \hline
-LAr-2018 &    -     & -0.7, 3.6& 0.3, 4.7 & 0.3, 3.9 \\ 
-LN2-2022 &    -     &    -     & 1.0, 2.6 &  0.5, 3.4 \\ 
-LN2-2023 &    -     &    -     &    -     & -0.5, 3.7 \\ 
-LAr-2023 &    -     &    -     &    -     &     -     \\ 
+LAr-2018 &    -     & -0.7, 3.6& 0.3, 4.7 & 0.3, 3.9 \\
+LN2-2022 &    -     &    -     & 1.0, 2.6 &  0.5, 3.4 \\
+LN2-2023 &    -     &    -     &    -     & -0.5, 3.7 \\
+LAr-2023 &    -     &    -     &    -     &     -     \\
 \end{tabular}
 \end{center}
 \caption{Mean and RMS of the difference between the calibration constants obtained in two calibration campaigns.}
