@@ -14,7 +14,7 @@
     \item  A 3D printed PLA support for four sensors, to be placed inside the aluminum capsule, keeping sensors always in the same position with respect to each other and to the capsule walls. 
 \end{itemize}
 
-The system described above provides stable conditions in the inner volume, with three levels of insulation: the outer polystyrene vessel and two PLA box LAr volumes. The aluminium capsule is key to this system and its usage constituted a turning point in the R\&D since it minimises thermal shocks, which were identified as the main limiting factor for the repeatability of the sensor's offsets. Indeed, variations of several tenths of mK were observed in initial tests without the capsule. The problem was attributed to thermal shocks when, after many immersions in LN$_{2}$, one of the sensors suffered a dramatic change in its offset (see Fig.~\ref{fig:broken_sensor_evolution}-top). Examination at the microscope revealed cracks in the outer RTD ceramics (see Fig.~\ref{fig:broken_sensor_evolution}-bottom). 
+The system described above provides stable conditions in the inner volume, with three levels of insulation: the outer polystyrene vessel and two PLA box LAr volumes. The aluminium capsule is key to this system and its usage constituted a turning point in the R\&D since it minimises thermal shocks, which were identified as the main limiting factor for the repeatability of the sensor's offsets. Indeed, variations of several tenths of mK were observed in initial tests without the capsule. The problem was attributed to thermal shocks when, after many immersions in LN$_{2}$, one of the sensors suffered a dramatic change in its offset (see Fig.~\ref{fig:broken_sensor_evolution}). Examination at the microscope revealed cracks in the outer RTD ceramics (see Fig.~\ref{fig:broken_sensor}). 
 
 \begin{figure}[htbp]
 \centering
@@ -27,10 +27,16 @@ The system described above provides stable conditions in the inner volume, with 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{images/figure_5_a.pdf}
-\includegraphics[width=0.6\textwidth]{images/figure_5_b.png}
-\caption{Top: offset between two sensors for 90 immersions in LN2. A drop of 800 mK is observed. Bottom: cracks observed with the microscope in the ceramic of the sensor. 
+\includegraphics[width=0.9\textwidth]{images/figure_5.pdf}
+\caption{Offset between two sensors for 90 immersions in LN2. A drop of 800 mK is observed. 
 \label{fig:broken_sensor_evolution}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{images/figure_6.png}
+\caption{Cracks observed with the microscope in the ceramic of the sensor. 
+\label{fig:broken_sensor}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -48,7 +54,7 @@ The system described above provides stable conditions in the inner volume, with 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{images/figure_6.pdf}
+\includegraphics[width=\textwidth]{images/figure_7.pdf}
 \caption{Schematic view of calibration sequence. Each number represents a different RTD, and the numbers in bold represent the reference sensors. The first round consists on a direct calibration respect to a reference sensor. The second and third rounds are needed to relate all sensors independently of the reference sensor.
 \label{fi:CAL_sequence}}
 \end{figure}
@@ -62,11 +68,11 @@ The following procedure is applied for each set of four sensors. First, they are
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{ c }
-\includegraphics[height=0.34\textheight]{images/figure_7_a.jpg}
+\includegraphics[height=0.34\textheight]{images/figure_8_a.jpg}
 \end{tabular}%
 \begin{tabular}{ c } 
-\includegraphics[width=0.32\textwidth]{images/figure_7_b.jpg} \\
-\includegraphics[width=0.32\textwidth]{images/figure_7_c.jpg} 
+\includegraphics[width=0.32\textwidth]{images/figure_8_b.jpg} \\
+\includegraphics[width=0.32\textwidth]{images/figure_8_c.jpg} 
 \end{tabular}
 \caption{Left: Picture of sensor order inside the flask. Position 1 corresponds to highest serial number and 4 to lowest; position 3 is reserved to reference sensor.
  Middle: Flask partially introduced in LAr.
@@ -84,7 +90,7 @@ For each set of sensors the procedure described above is repeated four times, re
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.6\textwidth]{images/figure_8.pdf}}
+{\includegraphics[width=0.6\textwidth]{images/figure_9.pdf}}
 \caption{Temperature evolution during the warm-up and cool-down processes between two consecutive runs. }
 \label{fi:CAL_pre}
 \end{figure}
@@ -103,7 +109,7 @@ For each set of sensors the procedure described above is repeated four times, re
 \label{sec:results_first_round}
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=\textwidth]{images/figure_9.pdf}}
+{\includegraphics[width=\textwidth]{images/figure_10.pdf}}
 \caption{Offset between the reference sensor and each of the three sensors in a set, as a function of time. Each colour represents an independent measurement.}
 \label{fi:CAL_offset_example}
 \end{figure}
@@ -112,7 +118,7 @@ The mean offset for each sensor and each calibration run is computed as the aver
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.6\textwidth]{images/figure_10.pdf}}
+{\includegraphics[width=0.6\textwidth]{images/figure_11.pdf}}
 \caption{Distribution of the offset statistical error for calibration runs in the first round.}
 \label{fi:CAL_rms_1r}
 \end{figure}
@@ -125,8 +131,8 @@ The mean offset for each sensor and each calibration run is computed as the aver
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.48\textwidth]{images/figure_11_a.pdf}}
-{\includegraphics[width=0.48\textwidth]{images/figure_11_b.pdf}}
+{\includegraphics[width=0.48\textwidth]{images/figure_12_a.pdf}}
+{\includegraphics[width=0.48\textwidth]{images/figure_12_b.pdf}}
 \caption{Offset between the reference sensors (39606 on the left panel and 39656 on the right panel) and the three secondary references as a function of the number of immersions. Offsets for sensor 39604 have smaller errors because of its position inside the capsule. Solid lines are correspond to the parameterisation in Eq.~\ref{eq:ref1_param}.}
 \label{fig:offset_ref}
 \end{figure}
@@ -160,16 +166,15 @@ All sensors can be related to the same primary reference sensor, 39606, adding  
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.9\textwidth]{images/figure_12_a.pdf}}
-{\includegraphics[width=0.9\textwidth]{images/figure_12_b.pdf}}
+{\includegraphics[width=0.9\textwidth]{images/figure_13.pdf}}
 \caption{Top: offset of each sensor with respect to reference sensor 39606 using the reference method. Bottom: offset of each sensor with respect to reference sensor 39656 using the tree method.}
 \label{fig:offsets_tree_1}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.45\textwidth]{images/figure_13_a.pdf}}
-{\includegraphics[width=0.45\textwidth]{images/figure_13_b.pdf}}
+{\includegraphics[width=0.45\textwidth]{images/figure_14_a.pdf}}
+{\includegraphics[width=0.45\textwidth]{images/figure_14_b.pdf}}
 \caption{Left: repeatability distribution for the reference method. Right: repeatability distribution for tree method.}
 \label{fig:offsets_tree_2}
 \end{figure}
@@ -183,8 +188,8 @@ By construction, the result of subtracting the calibration constants obtained in
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.49\textwidth]{images/figure_14_a.pdf}}
-{\includegraphics[width=0.49\textwidth]{images/figure_14_b.pdf}}
+{\includegraphics[width=0.49\textwidth]{images/figure_15_a.pdf}}
+{\includegraphics[width=0.49\textwidth]{images/figure_15_b.pdf}}
 \caption{$\Delta T_{45,06}$ computed through all sensors of the second stage of the calibration procedure. Left: applying corrections. Right: not applying corrections. A clear improvement is obtained using the corrections on the reference sensor. The red line represents the expected value of this calibration constant.}
 \label{fig:crosscheck}
 \end{figure}
