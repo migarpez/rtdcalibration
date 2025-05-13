@@ -71,12 +71,12 @@ The following procedure is applied for each set of four sensors. First, they are
 \includegraphics[height=0.34\textheight]{images/figure_8_a.jpg}
 \end{tabular}%
 \begin{tabular}{ c } 
-\includegraphics[width=0.32\textwidth]{images/figure_8_b.jpg} \\
-\includegraphics[width=0.32\textwidth]{images/figure_8_c.jpg} 
+\includegraphics[height=0.1665\textheight]{images/figure_8_b.jpg} \\
+\includegraphics[height=0.1665\textheight]{images/figure_8_c.jpg} 
 \end{tabular}
 \caption{Left: Picture of sensor order inside the flask. Position 1 corresponds to highest serial number and 4 to lowest; position 3 is reserved to reference sensor.
- Middle: Flask partially introduced in LAr.
- Right: Flask partially introduced in room water to warm up sensors before performing a new measurement.
+ Top: Flask partially introduced in LAr.
+ Bottom: Flask partially introduced in room water to warm up sensors before performing a new measurement.
 \label{fi:CAL_procedure}}
 \end{figure}
 
@@ -114,12 +114,12 @@ For each set of sensors the procedure described above is repeated four times, re
 \label{fi:CAL_offset_example}
 \end{figure}
 
-The mean offset for each sensor and each calibration run is computed as the average in the time range between 1000 and 2000 seconds, found to be the most stable region for most sensors. The standard deviation of the four measurements is taken as the statistical error of the offset, also referred from now on as repeatability. As shown in Fig.~\ref{fi:CAL_rms_1r}, those errors are in general below 1 mK, demonstrating the great level of repeatability achieved. 
+The mean offset for each sensor and each calibration run is computed as the average in the time range between 1000 and 2000 seconds, found to be the most stable region for most sensors. The standard deviation of the four measurements is taken as the uncertainty, also referred from now on as repeatability. As shown in Fig.~\ref{fi:CAL_rms_1r}, uncertainties are in general below 1 mK, demonstrating the great level of repeatability achieved. 
 
 \begin{figure}[htbp]
 \centering
 {\includegraphics[width=0.6\textwidth]{images/figure_11.pdf}}
-\caption{Distribution of the offset statistical error for calibration runs in the first round.}
+\caption{Distribution of the repeatability for calibration runs in the first round.}
 \label{fi:CAL_rms_1r}
 \end{figure}
 
@@ -158,16 +158,16 @@ All sensors can be related to the same primary reference sensor, 39606, adding  
 %---------------------------------------------------
 \subsubsection{Results on the reference method}
 \label{sec:results_reference}
-\noindent Fig.~\ref{fig:offsets_tree_1}-top shows the offset of all sensors with respect to the 39606 reference. As it can be noticed, the dispersion of the offsets is compatible with $\sim$0.1 K, the value quoted by the vendor. Fig.~\ref{fig:offsets_tree_2}-left shows the distribution of the repeatability of the computed calibration constants after applying the different corrections, showing an average value below 1 mK.
+\noindent Fig.~\ref{fig:offsets_tree_1} shows the offset of all sensors with respect to the 39606 reference. As it can be noticed, the dispersion of the offsets is compatible with $\sim$0.1 K, the value quoted by the vendor. Fig.~\ref{fig:offsets_tree_2}-left shows the distribution of the repeatability of the computed calibration constants after applying the different corrections, showing an average value below 1 mK.
 
 %---------------------------------------------------
 \subsubsection{Results on the tree method}
-\noindent The offsets are computed in this case with respect to an arbitrary reference among all sensors being calibrated. Selecting as reference a sensor present in the third round (see Fig.~\ref{fi:CAL_sequence}) minimises the number of operations to compute the offset, and hence the statistical error. Fig.~\ref{fig:offsets_tree_1}-bottom shows the offset of each sensor with respect to sensor 39645, chosen as reference. Fig.~\ref{fig:offsets_tree_2}-right shows the distribution of the repeatability of the computed calibration constants, the mean of which is slightly below the one obtained for the reference method. Thus, it is confirmed that despite the higher number of intermediate sensors to relate any two sensors, the additional error introduced by the time walk correction makes the tree method superior to the reference method. Moreover, the reference method suffers a ---not yet known--- systematic error associated to the time wall correction model. 
+\noindent The offsets are computed in this case with respect to an arbitrary reference among all sensors being calibrated. Selecting as reference a sensor present in the third round (see Fig.~\ref{fi:CAL_sequence}) minimises the number of operations to compute the offset, and hence the uncertainty when computing the offset. Sensor 39645 was chosen as reference. Fig.~\ref{fig:offsets_tree_2}-right shows the distribution of the repeatability of the computed calibration constants, the mean of which is slightly below the one obtained for the reference method. Thus, it is confirmed that despite the higher number of intermediate sensors to relate any two sensors, the additional uncertainty introduced by the time walk correction makes the tree method superior to the reference method. Moreover, the reference method suffers a ---not yet known--- systematic error associated to the time wall correction model. 
 
 \begin{figure}[htbp]
 \centering
 {\includegraphics[width=0.9\textwidth]{images/figure_13.pdf}}
-\caption{Top: offset of each sensor with respect to reference sensor 39606 using the reference method. Bottom: offset of each sensor with respect to reference sensor 39656 using the tree method.}
+\caption{Offset of each sensor with respect to reference sensor 39606 using the reference method.}
 \label{fig:offsets_tree_1}
 \end{figure}
 
@@ -182,7 +182,7 @@ All sensors can be related to the same primary reference sensor, 39606, adding  
 %---------------------------------------------------
 \subsubsection{Consistency cross-check and error estimation} 
 \label{sec:crossCheck}
-\noindent The errors presented so far are in general below 1 mK, and they correspond to the standard deviation of the four independent measurements of each calibration constant plus the error propagation associated to the required corrections (time-walk for the reference method, addition of calibration constants for the tree method, and the uncorrected electronic residual offset for both). These corrections are likely to include unknown systematic effects in the final calibration constants. In order to estimate the overall final precision of the calibration, the following cross-check was performed. The calibration strategy provides two different calibration constants for each sensor, one for the reference method and another for the tree method. In the case of the sixteen sensors used in the second round of the calibration tree, these two values are statistically independent of each other, since they rely on  different runs. Indeed, the reference method uses only the runs in the first round while the tree method for those sensors uses only runs in the second and third round. Thus, those 16 sensors can be used to estimate the precision of the calibration procedure by comparing the results of the two methods.
+\noindent The uncertainties presented so far are in general below 1 mK, and they correspond to the standard deviation of the four independent measurements of each calibration constant plus the error propagation associated to the required corrections (time-walk for the reference method, addition of calibration constants for the tree method, and the uncorrected electronic residual offset for both). These corrections are likely to include unknown systematic effects in the final calibration constants. In order to estimate the overall final precision of the calibration, the following cross-check was performed. The calibration strategy provides two different calibration constants for each sensor, one for the reference method and another for the tree method. In the case of the sixteen sensors used in the second round of the calibration tree, these two values are statistically independent of each other, since they rely on  different runs. Indeed, the reference method uses only the runs in the first round while the tree method for those sensors uses only runs in the second and third round. Thus, those 16 sensors can be used to estimate the precision of the calibration procedure by comparing the results of the two methods.
 
 By construction, the result of subtracting the calibration constants obtained in the two methods should be compatible with the offset between sensors 39645 and 39606, $\Delta T_{45,06} = \Delta T_{s,06}-\Delta T_{s,45} = T_{45}-T_{06}$, used as reference for the tree and reference methods respectively. This offset is found to be $-25.1 \pm 0.7$ mK by direct measurement of the two sensors (see 10th column in Fig.~\ref{fi:CAL_sequence}).  Fig.~\ref{fig:crosscheck} shows this benchmark with (left) and without (right) time walk corrections for the 16 sensors aforementioned, probing the self-consistency of this correction. The standard deviation of this distribution, 2.4 mK, is an estimation of the quadratic sum of the total uncertainty of both calibrations. Assuming that the reference sensor method has a larger uncertainty than the tree method due to the time walk correction, an upper limit of 1.7 mK for the total error of the tree method can be assumed. In the same way, this is the inferior limit for the total error of the reference method. In both cases, these errors are less that half of what was originally required for the TMS.
 
