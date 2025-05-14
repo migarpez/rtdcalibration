@@ -78,11 +78,11 @@ The experimental procedure is similar to the one presented in Sec.~\ref{sec:old_
 \subsection{Calibration results}
 \label{sec:new_calib_results}
 
-\noindent A sensor in the second round is chosen as reference, since this minimizes the number of operations for non promoted sensors. On the other hand, since there are three promoted sensors per set, there are also three ways of computing the offset with respect to the reference for the nine non promoted sensors in a set. The calibration constant for those sensors is computed as the weighted average of the three `paths', while its uncertainty is computed as the standard deviation of the three values. The chosen absolute reference is the 40525 for the rest of this analysis.
+\noindent A sensor in the second round is chosen as reference, since this minimizes the number of operations for non promoted sensors. On the other hand, since there are three promoted sensors per set, there are also three ways of computing the offset with respect to the reference for the nine non promoted sensors in a set. The calibration constant for those sensors is computed as the weighted average of the three `paths', while its uncertainty is computed as the standard deviation of the three values. The absolute reference chosen for the rest of the analysis is sensor 40525.
 
 For each of the paths, the error on the offset can be computed by quadratically adding the individual uncertainties on each of the terms contributing to that specific offset. Then, the average path offset is computed as the weighted mean of the different paths by considering the different path offsets errors that are involved. Finally, the uncertainty on the average path offset is computed as the standard deviation of the involved path offsets.
 
-Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. Mean values are larger than the ones obtained in the 2018 calibration. This is attributed to the increased capsule size and the larger distance between sensors inside the capsule. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the repeatability as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.
+Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. Mean values are larger than the ones obtained in the 2018 campaign. This is attributed to the increased capsule size and the larger distance between sensors inside the capsule. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the repeatability as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.
 
 % Using the same logic presented in Sec.~\ref{sec:calib_procedure}, the offset between any pair of sensors can be computed by following a certain path in the tree. To minimise the statistical error, all offsets are referenced to a sensor in the second round, 40525, chosen as reference. The previous reference, 39656, was discarded since it was damaged during ProtoDUNE-SP decommissioning. Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. As expected, this error is larger than in the 2018 calibration mainly due to the increased size of the inner volume and the larger distance between sensors. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the statistical error as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.%, indicating that convection inside the capsule should be similar for both liquids.
 
@@ -96,18 +96,18 @@ Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (define
 \begin{figure}[htbp]
     \centering
     {\includegraphics[width=0.33\textwidth]{images/figure_19_a.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_19_b.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_19_c.pdf}}
-    \caption{Statistical error distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023, Right:LAr-2023}
+    \caption{Repeatability distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023, Right:LAr-2023}
     \label{fig:newCalib_stat}
     \end{figure}
 
 \begin{figure}[htbp]
 \centering
 {\includegraphics[width=0.65\textwidth]{images/figure_20.pdf}}
-\caption{Statistical error vs position in the corona for the first run of the first calibration set, using position 13 as reference.}
+\caption{Repeatability as a function of position in the corona for the first run of the first calibration set, using position 13 as reference.}
 \label{fig:newCalib_statVsChannel}
 \end{figure}
 
-Comparison between LN2 and LAr calibrations can also be used to understand the dependence of the calibration constants on the absolute temperature. Fig.~\ref{fig:comp_newCalib} shows the difference between the calibration constants obtained in two calibrations. The standard deviation of the distribution is lower when comparing two calibrations in the same liquid (LN2 in this case). However no bias is observed when comparing calibrations in two different liquids, indicating that offsets are insensitive to a 10 K variation in absolute temperature.
+Comparison between LN2 and LAr calibrations can also be used to understand the dependence of the calibration constants on the absolute temperature. This is shown in Fig.~\ref{fig:comp_newCalib} along with other comparisons between calibration campaigns. The standard deviation of the distribution is lower when comparing two calibrations in the same liquid (LN2 in this case). However no bias is observed when comparing calibrations in two different liquids, indicating that offsets are insensitive to a 10 K variation in absolute temperature.
 
 \begin{figure}[htbp]
 \centering
