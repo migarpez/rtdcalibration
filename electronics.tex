@@ -1,11 +1,11 @@
 \section{Readout system}
 \label{sec:readout}
-\noindent A precise and stable electronic readout system is needed to achieve the required precision. In previous versions of the calibration system, each sensor was connected to a different and independent electronic circuit and thus, fed by a different current and read by a different ADC channel. It was soon realized that the measured temperature difference between any two pairs of sensors was heavily affected by the electronic offset between channels. This offset was not constant, and showed dependence on ambient temperature and humidity, which affected both the current source and the ADC, generating variations of tens of mK for the measurement of a single calibration constant between sensors. A variant of an existing mass PT100 temperature readout system developed at CERN for one of the LHC experiments \cite{bib:multiplexing_board} was adapted to solve this problem. The system consists of an electronic circuit that includes:
+\noindent A precise and stable electronic readout system is needed to achieve the required precision. In previous versions of the calibration system, each sensor was connected to a different and independent electronic circuit and thus, fed by a different current and read by a different ADC channel. It was soon realized that the measured temperature difference between any two pairs of sensors was heavily affected by the electronic offset between channels. This offset was not constant, and showed dependence on ambient temperature and humidity, which affected both the current source and the ADC, generating variations of tens of mK for the measurement of a single calibration constant between sensors. A variant of an existing mass PT100 temperature readout system developed at CERN for one of the LHC experiments~\cite{bib:multiplexing_board} was adapted to solve this problem. The system consists of an electronic circuit that includes:
 
 \begin{itemize}
-\item A precise and accurate 1 mA current source for the excitation of the temperature sensors based on an application of the Texas Instruments precise voltage reference REF102CU with a possibility to adjust ±10nA with Keithley 2001 multimeter \cite{xavier,keithley}.%This source is adjusted to the 10 nA level with a Keithley 2001 multimeter \cite{keithley}. 
+\item A precise and accurate 1 mA current source for the excitation of the temperature sensors based on an application of the Texas Instruments precise voltage reference REF102CU with a possibility to adjust $\pm$10nA with Keithley 2001 multimeter~\cite{xavier,keithley}.%This source is adjusted to the 10 nA level with a Keithley 2001 multimeter~\cite{keithley}. 
 \item A multiplexing circuit based on the Analog Devices ADG1407BRUZ multiplexer with ultralow internal resistance in an 8-channel differential configuration. The readout circuit contains three multiplexers, providing a readout capacity of 24 channels. The multiplexing circuit and the current sourced are realised in a single card (see Fig.~\ref{fig:readout}). 
-\item A readout system based on National Instruments Compact RIO-FPGA device \cite{compactrio} equipped with a NI-9238 analogue input module that provide 24 bits of resolution over 1 volt range \cite{ni9238}. By programming the Van Dusen equation the readout calculates the temperature in Kelvin units. The Compact RIO also drives the control bits of the multiplexers
+\item A readout system based on National Instruments Compact RIO-FPGA device~\cite{compactrio} equipped with a NI-9238 analogue input module that provide 24 bits of resolution over 1 volt range~\cite{ni9238}. By programming the Van Dusen equation the readout calculates the temperature in Kelvin units. The Compact RIO also drives the control bits of the multiplexers
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -46,6 +46,6 @@ The results in Fig.~\ref{fig:readout_calib}, show an offset of up to 2.5 mK when
 \begin{figure}[htbp]
 \centering
 {\includegraphics[width=0.65\textwidth]{images/figure_3.pdf}}
-\caption{Offset between readout channels 8-18 and channel 7, used as reference. Points correspond to the mean of the 4 independent measurements and the error bars are their RMS.}
+\caption{Offset between readout channels 8-18 and channel 7, used as reference. Points correspond to the mean of the 4 independent measurements and the error bars are their standard deviation.}
 \label{fig:readout_calib}
 \end{figure}
