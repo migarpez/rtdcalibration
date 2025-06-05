@@ -6,7 +6,7 @@
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{l c c}
-date & cryogenic liquid & \# sensors in capsule  \\ \hline
+Date & Cryogenic liquid & \# Sensors in capsule  \\ \hline
 March 2018     &   LAr    &  4  \\
 February 2022  &   LN2    & 14  \\
 March 2023     &   LN2    & 14  \\
@@ -23,7 +23,7 @@ In this section, a description of the setup used for these new calibrations, the
 \subsection{Evolution of the calibration setup}
 \label{sec:new_calib_setup}
 
-\noindent The Horizontal Drift Far Detector module will be equipped with over 500 precision sensors~\cite{dune_tdr4}, making the use of the current calibration setup impractical, as it can accommodate only four sensors simultaneously. Significant modifications have been introduced in order to increase this number to twelve, while maintaining the precision achieved during the 2018 calibration campaign. This was accomplished by positioning sensors at the same height, to avoid any potential vertical gradient, and following a cylindrical configuration, under the assumption that convection inside the capsule has rotational symmetry.
+\noindent The FD-HD module will be equipped with over 500 precision sensors~\cite{dune_tdr4}, making the use of the current calibration setup impractical, as it can accommodate only four sensors simultaneously. Significant modifications have been introduced in order to increase this number to twelve, while maintaining the precision achieved during the 2018 calibration campaign. This was accomplished by positioning sensors at the same height, to avoid any potential vertical gradient, and following a cylindrical configuration, under the assumption that convection inside the capsule has rotational symmetry.
 This symmetry is also kept outside the capsule in all concentric cryogenic containers, having added a fourth independent volume which should further reduce convection inside the inner capsule.
 This notable advancement greatly streamlines the calibration process and serves to reduce both statistical and systematic errors associated with the procedure. Fig. \ref{fig:newSetup} shows the different elements of the new calibration setup, which are described below:
 
@@ -78,7 +78,7 @@ The experimental procedure is similar to the one presented in Sec.~\ref{sec:old_
 \subsection{Calibration results}
 \label{sec:new_calib_results}
 
-\noindent A sensor from the second round is chosen as the reference, as this minimizes the number of operations required for the non-promoted sensors. Since each set includes three promoted sensors, there are three \textcolor{red}{linearly independent} ways to compute the offset relative to the reference for the nine non-promoted sensors in that set. The calibration constant for these sensors is calculated as the weighted average of the three ``paths'', while the uncertainty is taken as the standard deviation of these three values. The offset error used in the weighted average for each of the three paths and is computed by quadratically adding the individual uncertainties on each of the terms contributing to that specific offset. For the remainder of the analysis, sensor 40525 is used as the absolute reference.
+\noindent A sensor from the second round is chosen as the reference, as this minimizes the number of operations required for the non-promoted sensors. Since each set includes three promoted sensors, there are three \textcolor{red}{linearly independent} ways to compute the offset relative to the reference for the nine non-promoted sensors in that set. The calibration constant for these sensors is calculated as the weighted average of the three “paths”, with its uncertainty given by the standard deviation of these three values. The offset uncertainty used in the weighted average for each of the three paths is computed by quadratically summing the individual uncertainties (as in Fig.~\ref{fig:newCalib_stat}) of all terms contributing to the offset along that specific path. Sensor 40525 is adopted as the reference for the remainder of the analysis.
 
 Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. \textcolor{red}{AÑADIR AQUÍ EL PORQUÉ LAR2023 TIENE 47 entries.} In all three cases the uncertainty is slightly above 1 mK. Mean values are larger than the ones obtained in the 2018 calibration campaign. This is attributed to the increased capsule size and the larger distance between sensors inside the capsule. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the repeatability as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.
 
@@ -122,7 +122,7 @@ Ageing and long term stability have also been addressed. The left panel of Fig.~
 \subsection{Comparison between new and old calibrations}
 \label{sec:compNewOld}
 
-\noindent Fig. \ref{fig:LAr2018AllDiff} shows the distribution of the offset difference between the LAr-2018 and LAr-2023 calibrations. The mean of the distribution is $-0.1\pm0.6$ mK, excluding any relevant systematic drift. The standard deviation of the distribution, 4.0 mK, is only slightly larger than the ones obtained in the comparison between newer calibrations, which could be due to the unknown contribution of the uncorrected readout offsets, pointing to small or non-existing ageing effects. This can also be observed in Table~\ref{tab:calib_comparison}, summarizing the results of all possible comparisons between calibration campaigns, showing the mean and standard deviation of those comparisons. The lowest standard deviation, 1.6 mK, is obtained for the LN2-2022 to LN2-2023 combination, which is somehow expected since i) the cryogenic liquid is the same, ii) ageing should be small since there is only one year difference and iii) having use the same readout channels, readout offsets cancel out.
+\noindent Fig. \ref{fig:LAr2018AllDiff} shows the distribution of the offset difference between the LAr-2018 and LAr-2023 calibrations. The mean of the distribution is $-0.1\pm0.6$ mK, excluding any relevant systematic drift. The standard deviation of the distribution, 4.3 mK, is only slightly larger than the ones obtained in the comparison between newer calibrations, which could be due to the unknown contribution of the uncorrected readout offsets, pointing to small or non-existing ageing effects. This can also be observed in Table~\ref{tab:calib_comparison}, summarizing the results of all possible comparisons between calibration campaigns, showing the mean and standard deviation of those comparisons. The lowest standard deviation, 1.6 mK, is obtained for the LN2-2022 to LN2-2023 combination, which is somehow expected since i) the cryogenic liquid is the same, ii) ageing should be small since there is only one year difference and iii) having use the same readout channels, readout offsets cancel out.
 
 \begin{figure}[htbp]
 \centering
