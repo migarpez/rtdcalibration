@@ -1,7 +1,7 @@
 \section{Re-calibration after ProtoDUNE-SP operation}
 \label{sec:new_calib}
 
-\noindent After the decommissioning of ProtoDUNE-SP in 2020, the temperature sensors were disconnected from the TGM and re-calibrated multiple times (see Table \ref{tab:calib}), using both LAr and LN2 as cryogenic liquid. \textcolor{red}{Two sensors were damaged during the decommissioning process and were not replaced until the LAr-2023 calibration campaign.} The comparative analysis of those re-calibrations not only offers insights into the long-term stability of the sensors but also elucidates any potential dependencies on the choice of the cryogenic liquid. Although DUNE will use LAr, massive RTD calibration would benefit from using LN2, given its higher accessibility and lower cost.
+\noindent After the decommissioning of ProtoDUNE-SP in 2020, the temperature sensors were disconnected from the TGM and re-calibrated multiple times (see Table \ref{tab:calib}), using both LAr and LN2 as cryogenic media. Two sensors were damaged during the decommissioning process and were not replaced until the LAr-2023 calibration campaign. The comparative analysis of those re-calibrations not only offers insights into the long-term stability of the sensors but also elucidates any potential dependencies on the choice of the cryogenic liquid. Although DUNE will use LAr, massive RTD calibration would benefit from using LN2, given its higher accessibility and lower cost.
 
 \begin{table}[htbp]
 \begin{center}
@@ -47,7 +47,7 @@ This notable advancement greatly streamlines the calibration process and serves 
 {\includegraphics[angle=90,width=0.3\textwidth]{images/image.png}}
 {\includegraphics[width=0.303\textwidth,trim=0cm 6cm 0cm 7.45cm, clip]{images/figure_16_a.jpg}}
 {\includegraphics[width=0.3\textwidth, trim=0cm 7cm 0cm 10.4cm, clip]{images/figure_16_c.jpg}}
-\caption{Left: The four concentric volumes of the calibration setup. Center: A view of one of the references and two corona sensors. Right: The 12 corona sensors plus the 2 references.}
+\caption{Left: The polystyrene box that hosts the calibration setup. Center: The four concentric volumes of the calibration setup. Right: The 12 corona sensors plus the 2 references.}
 \label{fig:newSetup}
 \end{figure}
 
@@ -83,7 +83,7 @@ The experimental procedure is similar to the one presented in Sec.~\ref{sec:old_
 
 \noindent A sensor from the second round is chosen as the reference, as this minimizes the number of operations required for the non-promoted sensors. Since each set includes three promoted sensors, there are three \textcolor{red}{linearly independent} ways to compute the offset relative to the reference for the nine non-promoted sensors in that set. The calibration constant for these sensors is calculated as the weighted average of the three “paths”, with its uncertainty given by the standard deviation of these three values. The offset uncertainty used in the weighted average for each of the three paths is computed by quadratically summing the individual uncertainties (as in Fig.~\ref{fig:newCalib_stat}) of all terms contributing to the offset along that specific path. Sensor 40525 is adopted as the reference for the remainder of the analysis.
 
-Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. \textcolor{red}{AÑADIR AQUÍ EL PORQUÉ LAR2023 TIENE 47 entries.} In all three cases the uncertainty is slightly above 1 mK. Mean values are larger than the ones obtained in the 2018 calibration campaign. This is attributed to the increased capsule size and the larger distance between sensors inside the capsule. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the repeatability as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.
+Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. The values obtained are slighly worst than in the 2018 calibration campaign, which is somehow expected given the increased capsule size and the larger distance between sensors. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the repeatability as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.
 
 % Using the same logic presented in Sec.~\ref{sec:calib_procedure}, the offset between any pair of sensors can be computed by following a certain path in the tree. To minimise the statistical error, all offsets are referenced to a sensor in the second round, 40525, chosen as reference. The previous reference, 39656, was discarded since it was damaged during ProtoDUNE-SP decommissioning. Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (defined in Sec.~\ref{sec:results_first_round}) for the three new calibrations mentioned in Table~\ref{tab:calib}. In all three cases the error is slightly above 1 mK. As expected, this error is larger than in the 2018 calibration mainly due to the increased size of the inner volume and the larger distance between sensors. This hypothesis is supported by Fig.~\ref{fig:newCalib_statVsChannel}, showing the statistical error as a function of the distance to the reference sensor in the corona for a particular measurement. However, there is no substantial difference between the repeatability obtained for LN2 and LAr calibrations.%, indicating that convection inside the capsule should be similar for both liquids.
 
@@ -97,7 +97,7 @@ Fig.~\ref{fig:newCalib_stat} shows the distribution of the repeatability (define
 \begin{figure}[htbp]
     \centering
     {\includegraphics[width=0.33\textwidth]{images/figure_19_a.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_19_b.pdf}}{\includegraphics[width=0.33\textwidth]{images/figure_19_c.pdf}}
-    \caption{Repeatability distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023, Right:LAr-2023}
+    \caption{Repeatability distribution for the new calibrations. Left: LN2-2022. Middle: LN2-2023. Right:LAr-2023. LAr-2023 includes two additional sensors, absent from earlier calibration campaigns, which were replaced after being damaged during the decommissioning of ProtoDUNE-SP.}
     \label{fig:newCalib_stat}
     \end{figure}
 
