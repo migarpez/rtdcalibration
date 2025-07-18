@@ -5,12 +5,12 @@
 \begin{itemize}
 \item A precise and accurate 1 mA current source for the excitation of the temperature sensors based on an application of the Texas Instruments precise voltage reference REF102CU with a possibility to adjust $\pm$10nA with Keithley 2001 multimeter~\cite{xavier,keithley}.%This source is adjusted to the 10 nA level with a Keithley 2001 multimeter~\cite{keithley}.
 \item A multiplexing circuit based on the Analog Devices ADG1407BRUZ multiplexer with ultralow internal resistance in an 8-channel differential configuration. By integrating three multiplexers, the readout circuit supports simultaneous acquisition from 24 channels. The multiplexing circuit and the current source are assembled on a single card (see Fig.~\ref{fig:readout}).
-\item A readout system based on National Instruments Compact RIO-FPGA device~\cite{compactrio} equipped with a NI-9238 analogue input module that provide 24 bits resolution over 1 volt range~\cite{ni9238}. By programming the Van Dusen equation the readout calculates the temperature in Kelvin units. The Compact RIO also drives the control bits of the multiplexers
+\item A readout system based on National Instruments Compact RIO-FPGA device~\cite{compactrio} equipped with a NI-9238 analogue input module that provide 24 bits resolution over 1 volt range~\cite{ni9238}. By programming the Callendar-Van Dusen equation the readout calculates the temperature in Kelvin units. The Compact RIO also drives the control bits of the multiplexers.
 \end{itemize}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{images/figure_2.png}
+\includegraphics[width=0.6\textwidth]{./figure_2.png}
 \caption{Current source and multiplexing card with 24 channels.
 \label{fig:readout}}
 \end{figure}
@@ -18,7 +18,7 @@
 \noindent
 One of the features of the readout circuit is the serialization of the current source excitation for all the sensors connected to the same board, such that the same current is delivered to all of them. Multiplexing the signal of the sensors such that they can be readout by the same ADC channel minimises the residual offset due to the electronics. This system was used during the calibration campaigns presented in this article and also for the temperature measurements during ProtoDUNE-SP operation.
 
-The readout was not considered a potential source of bias during the calibration campaign prior to the installation in ProtoDUNE-SP (see Sec.~\ref{sec:old_calib}) and it was not studied in detail at that time. However, in order to improve the calibration results following ProtoDUNE-SP operation, a more detailed study of the readout system was conducted prior to the calibration campaigns presented in~\ref{sec:new_calib}. In particular, the twelve channels (7-18) used for sensor calibration were investigated. It was found that, despite the use of the multiplexing system, a small residual offset between channels persists. Fig.~\ref{fig:readout_calib} shows the offsets of channels 8-18 with respect to channel 7, computed using twelve 20-ohm precision resistors with a low Temperature Coefficient of Resistance (TCR)\footnote{The temperature coefficient of resistance is defined as the change in resistance per unit resistance per degree rise in temperature. Typically ±5ppm/°C.} precision resistors, with an equivalent temperature of 76 K. Two of those, High Precision 1 (HP1) and High Precision 2 (HP2), are selected as the measurement samples and connected to the reference channel (7) and the channel being calibrated (from 8-18), while leaving all other channels connected to other secondary resistors to let the current flow through the system. The readout offset between channel 7 and channel X, $\Delta T_{7-X}^{readout}$, is then computed using the results of two consecutive measurements:
+The readout was not considered a potential source of bias during the calibration campaign prior to the installation in ProtoDUNE-SP (see Sec.~\ref{sec:old_calib}) and it was not studied in detail at that time. However, in order to improve the calibration results following ProtoDUNE-SP operation, a more detailed study of the readout system was conducted prior to the calibration campaigns presented in~\ref{sec:new_calib}. In particular, the twelve channels (7-18) used for sensor calibration were investigated. It was found that, despite the use of the multiplexing system, a small residual offset between channels persists. Fig.~\ref{fig:readout_calib} shows the offsets of channels 8-18 with respect to channel 7, computed using twelve 20-ohm precision resistors with a low Temperature Coefficient of Resistance (TCR)\footnote{The temperature coefficient of resistance is defined as the change in resistance per unit resistance per degree rise in temperature. Typically ±5ppm/°C.}, with an equivalent temperature of 76 K. Two of those, High Precision 1 (HP1) and High Precision 2 (HP2), are selected as the measurement samples and connected to the reference channel (7) and the channel being calibrated (from 8-18), while leaving all other channels connected to other secondary resistors to let the current flow through the system. The readout offset between channel 7 and channel X, $\Delta T_{7-X}^{readout}$, is then computed using the results of two consecutive measurements:
 
 \begin{enumerate}%[label=(\Alph*)]
     \item HP1 in channel 7 and HP2 in the channel X being calibrated. The offset between the measured temperatures is
@@ -35,7 +35,7 @@ The readout was not considered a potential source of bias during the calibration
     \end{equation}
 
 \noindent
-Because of the very low TCR of the resistors, it can be assumed that the resistances are constants in thse two measurements ( $T_{7}^{HP1}=T_{X}^{HP1}$ and $T_{7}^{HP2}=T_{X}^{HP2}$). Thus, the offset between channels 7 and X can be computed as the average between those two measurements:
+Because of the very low TCR of the resistors, it can be assumed that the resistances are constant in these two measurements ( $T_{7}^{HP1}=T_{X}^{HP1}$ and $T_{7}^{HP2}=T_{X}^{HP2}$). Thus, the offset between channels 7 and X can be computed as the average between those two measurements:
 
 \begin{equation}
     \Delta T_{7-X}^{readout} = \frac{\Delta T^{A}_{7-X} + \Delta T^{B}_{X-7}}{2} \, .
@@ -45,7 +45,7 @@ The results in Fig.~\ref{fig:readout_calib}, show an offset of up to 2.5 mK when
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.65\textwidth]{images/figure_3.pdf}}
+{\includegraphics[width=0.65\textwidth]{./figure_3.pdf}}
 \caption{Offset between readout channels 8-18 and channel 7, used as reference. Points correspond to the mean of the 4 independent measurements and the error bars are their standard deviation.}
 \label{fig:readout_calib}
 \end{figure}

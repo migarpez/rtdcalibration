@@ -1,7 +1,7 @@
 \section{Calibration before the installation in ProtoDUNE-SP}
 \label{sec:old_calib}
 
-\noindent The Lake Shore Cryotronics company provides PT102 RTDs with a temperature accuracy of about 0.1 K, which is insufficient for ProtoDUNE-SP's requirements. While the company offers additional calibration to the 10 mK level, the cost is prohibitive. R\&D on sensor calibration was identified as a crucial ingredient for the success of the ProtoDUNE-SP temperature monitoring system. For this particular application, sensor calibration consists in finding the temperature offset between any pair of sensors when exposing them to the same temperature. The experimental setup used for the calibration of RTDs before their installation in ProtoDUNE-SP had two main components: i) the readout system used to monitor the sensor's temperature (described in the previous section) and ii) the cryogenics vessel and the associated mechanical elements used to put sensors together under stable and homogeneous cryogenics conditions. They were developed to achieve a relative calibration with a precision better than 5 mK. %They are described in detail below.
+\noindent The Lake Shore Cryotronics company provides PT102 RTDs with a temperature accuracy of about 0.1 K, which is insufficient for ProtoDUNE-SP's requirements. While the company offers additional calibration to the 10 mK level, the cost is prohibitive. R\&D on sensor calibration was identified as a crucial ingredient for the success of the ProtoDUNE-SP temperature monitoring system. For this particular application, sensor calibration consists in finding the temperature offset between any pair of sensors when exposing them to the same temperature, $\Delta T_{ij}=T_{i}-T_{j}$. The experimental setup used for the calibration of RTDs before their installation in ProtoDUNE-SP had two main components: i) the readout system used to monitor the sensor's temperature (described in the previous section) and ii) the cryogenics vessel and the associated mechanical elements used to put sensors together under stable and homogeneous cryogenics conditions. They were developed to achieve a relative calibration with a precision better than 5 mK. %They are described in detail below.
 
 %--------------------------------------------
 \subsection{Experimental setup}
@@ -18,23 +18,23 @@ The system described above ensures sufficiently stable and homogeneous condition
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.32\textwidth]{images/figure_4_a.jpg}
-\includegraphics[width=0.32\textwidth]{images/figure_4_b.jpg}
-\includegraphics[width=0.32\textwidth]{images/figure_4_c.jpg}
+\includegraphics[width=0.32\textwidth]{./figure_4_a.jpg}
+\includegraphics[width=0.32\textwidth]{./figure_4_b.jpg}
+\includegraphics[width=0.32\textwidth]{./figure_4_c.jpg}
 \caption{Final calibration setup. Left: polystyrene box with PLA box and aluminum capsule. Middle: aluminum capsule. Right: Sensor's support with four sensors.
 \label{fig:setup_final}}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{images/figure_5.pdf}
+\includegraphics[width=0.9\textwidth]{./figure_5.pdf}
 \caption{Offset between two sensors for 90 immersions in LN2. A temperature drop of approximately 800 mK is observed around the 70th immersion point.
 \label{fig:broken_sensor_evolution}}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{images/figure_6.png}
+\includegraphics[width=0.6\textwidth]{./figure_6.png}
 \caption{Cracks observed with the microscope in the ceramic of the sensor.
 \label{fig:broken_sensor}}
 \end{figure}
@@ -54,7 +54,7 @@ The system described above ensures sufficiently stable and homogeneous condition
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{images/figure_7.pdf}
+\includegraphics[width=\textwidth]{./figure_7.pdf}
 \caption{Schematic view of calibration sequence. Each number represents a different RTD, and the numbers in bold represent the reference sensors. The first round consists on a direct calibration respect to a reference sensor. The second and third rounds are needed to relate all sensors independently of the reference sensor.
 \label{fi:CAL_sequence}}
 \end{figure}
@@ -63,16 +63,16 @@ The reference method was expected to be more precise since any two sensors were 
 
 Offset repeatability is a critical parameter to understand, as the laboratory calibration must remain valid when applied to the actual detector. To study this, four independent calibration runs were performed for each set of four sensors. However, due to concerns about thermal fatigue in the primary reference sensor---subjected to 64 thermal cycles over the four repeatability runs---three secondary reference sensors were employed to regularly monitor its response and ensure reliability over time.
 
-The following procedure is applied for each set of four sensors. First, they are placed inside the aluminium capsule. The central connector closer to the red one is used for the reference sensor. These positions are easily called by numbers from 1 (orange) to 4 (red), as shown in Fig.~\ref{fi:CAL_procedure}-left.
+The following procedure is applied for each set of four sensors. First, they are placed inside the aluminium capsule. The central connector closer to the one with red tape in the cable is used for the reference sensor. These positions are easily called by numbers from 1 (sensor with orange tape in the cable) to 4 (red), as shown in Fig.~\ref{fi:CAL_procedure}-left.
 
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{ c }
-\includegraphics[height=0.34\textheight]{images/figure_8_a.jpg}
+\includegraphics[height=0.34\textheight]{./figure_8_a.jpg}
 \end{tabular}%
 \begin{tabular}{ c }
-\includegraphics[height=0.1665\textheight]{images/figure_8_b.jpg} \\
-\includegraphics[height=0.1665\textheight]{images/figure_8_c.jpg}
+\includegraphics[height=0.1665\textheight]{./figure_8_b.jpg} \\
+\includegraphics[height=0.1665\textheight]{./figure_8_c.jpg}
 \end{tabular}
 \caption{Left: Picture of sensor order inside the flask. Position 1 corresponds to highest serial number and 4 to lowest; position 3 is reserved to reference sensor.
  Top: Flask partially introduced in LAr.
@@ -84,13 +84,13 @@ After filling the PLA box with liquid argon, the aluminum capsule is partially i
 
 When the measurement is finished, the capsule is extracted from the liquid, emptied of LAr and partially immersed into another polystyrene box filled with water at room temperature (see Fig.~\ref{fi:CAL_procedure}-right-bottom). The warm-up process takes about ten minutes. When sensors have reached a temperature around 250 K a new independent calibration run can start.
 
-Fig.~\ref{fi:CAL_pre} shows the typical evolution of the temperature for the four sensors in the capsule during the warm-up and cool-down processes. A sudden fall to 87 K is observed at minute 32, which corresponds to total immersion of the sensors in LAr. Notice also that two of the sensors have lower temperature during the cool-down process; those are sensors 1 and 4, the ones closer to the capsule walls.
+Fig.~\ref{fi:CAL_pre} shows the typical evolution of the temperature for the four sensors in the capsule during the warm-up and cool-down processes. In this plot $t=0$ represents the moment a calibration measurement finishes and the following warm-up and cool-down process starts. A sudden fall to 87 K is observed at minute 32, which corresponds to total immersion of the sensors in LAr. Notice also that two of the sensors have lower temperature during the cool-down process; those are sensors 1 and 4, the ones closer to the capsule walls.
 
 For each set of sensors the procedure described above is repeated four times, resulting in four independent measurements of the same offset. These measurements are used to compute a mean offset value and its standard deviation (repeatability from now on).
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.6\textwidth]{images/figure_9.pdf}}
+{\includegraphics[width=0.6\textwidth]{./figure_9.pdf}}
 \caption{Temperature evolution between two calibration runs, showing the warm-up and cool-down phases of the four temperature sensors inside the capsule. Sensors 1 and 4 are located closest to the capsule walls.}
 \label{fi:CAL_pre}
 \end{figure}
@@ -109,8 +109,8 @@ For each set of sensors the procedure described above is repeated four times, re
 \label{sec:results_first_round}
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=\textwidth]{images/figure_10.pdf}}
-\caption{Offset between the reference sensor and each of the three sensors in a set, as a function of time. Each colour represents an independent calibration run.}
+{\includegraphics[width=\textwidth]{./figure_10.pdf}}
+\caption{Offset between the reference sensor and each of the three sensors in a set, as a function of time. $t=0$ corresponds to the time when the calibration measurement starts. Each colour (black, red, green and blue) represents an independent calibration run.}
 \label{fi:CAL_offset_example}
 \end{figure}
 
@@ -118,7 +118,7 @@ The mean offset for each sensor and each calibration run is calculated as the av
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.6\textwidth]{images/figure_11.pdf}}
+{\includegraphics[width=0.6\textwidth]{./figure_11.pdf}}
 \caption{Distribution of the repeatability for calibration runs in the first round.}
 \label{fi:CAL_rms_1r}
 \end{figure}
@@ -127,12 +127,12 @@ The mean offset for each sensor and each calibration run is calculated as the av
 %\subsubsection{Evolution on the response of the reference sensors}
 \subsubsection{Time walk correction for reference sensors}
 \label{sec:reference_corrections}
-\noindent Time evolution of the response of sensor 39606 was studied by periodically (every $\sim$20 immersions)  computing its offset with respect to three secondary reference sensors, 39603, 39604 and 39605. For each of those additional calibrations, two runs were taken instead of four in order to minimize thermal fatigue of the reference sensor. As shown in Fig.~\ref{fig:offset_ref}-left, the offset, computed as the mean of those two runs, varies linearly at a rate of 0.07 mK/immersion, which suddenly increases to 0.22 mK/immersion after 60 runs. This change in the slope may be related with to the frequency of immersions, which increased from 3/day to 5/day. Sensor 39606 was initially used for other purposes, and the calibration of the 48 sensors conforming the static TGM started approximately at immersion 40. Given this change in its response, sensor 39606 was substituted by 39656 as primary reference for the last quarter of the TGM calibration in order to avoid further fatigue and potential untraceable behaviour. The evolution of the new reference sensor is shown in Fig.~\ref{fig:offset_ref}-right. It is worth noting that the same slopes are valid for the three secondary reference sensors in both cases, supporting the idea that the change observed in the offsets can be exclusively attributed to thermal fatigue of the reference sensor.
+\noindent Time evolution of the response of reference sensor 39606 was studied by periodically (every $\sim$20 immersions)  computing its offset with respect to three secondary reference sensors, 39603, 39604 and 39605. For each of those additional calibrations, two runs were taken instead of four in order to minimize thermal fatigue of the reference sensor. As shown in Fig.~\ref{fig:offset_ref}-left, the offset, computed as the mean of those two runs, varies linearly at a rate of 0.07 mK/immersion, which suddenly increases to 0.22 mK/immersion after 60 runs. This change in the slope may be related with to the frequency of immersions, which increased from 3/day to 5/day. The calibration of the 48 sensors conforming the static TGM started approximately at immersion 40---other temperature sensors were calibrated before with respect to sensor 30606. Given this change in its response, sensor 39606 was substituted by 39656 as primary reference for the last quarter of the TGM calibration in order to avoid further fatigue and potential untraceable behaviour. The evolution of the new reference sensor is shown in Fig.~\ref{fig:offset_ref}-right. It is worth noting that the same slopes are valid for the three secondary reference sensors in both cases, supporting the idea that the change observed in the offsets can be exclusively attributed to thermal fatigue of the reference sensor.
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.48\textwidth]{images/figure_12_a.pdf}}
-{\includegraphics[width=0.48\textwidth]{images/figure_12_b.pdf}}
+{\includegraphics[width=0.48\textwidth]{./figure_12_a.pdf}}
+{\includegraphics[width=0.48\textwidth]{./figure_12_b.pdf}}
 \caption{Offset between the reference sensors (39606 on the left panel and 39656 on the right panel) and the three secondary references as a function of the number of immersions. Offsets for sensor 39604 have smaller errors because of its position inside the capsule. Solid lines correspond to the parametrization in Eq.~\ref{eq:ref1_param}.}
 \label{fig:offset_ref}
 \end{figure}
@@ -153,28 +153,28 @@ The zero intercept in both panels of Fig.~\ref{fig:offset_ref} corresponds to th
 \label{eq:ref2_param}
 \end{equation}
 
-All sensors can be related to the same primary reference sensor, 39606, adding  the unbiased offset between sensors 39606 and 39656,  $\Delta T_{56,06}(N=0)$, to sensors calibrated with respect to 39656. By averaging over the three secondary reference sensors, the value obtained is $\Delta T_{56,06}(N=0)=-9.19\pm0.13$ mk.
+All sensors can be related to the same primary reference sensor, 39606, adding  the unbiased offset between sensors 39606 and 39656,  $\Delta T_{56,06}(N=0)$, to sensors calibrated with respect to 39656. By averaging over the three secondary reference sensors, the value obtained is $\Delta T_{56,06}(N=0)=-9.19\pm0.13$ mK.
 
 %---------------------------------------------------
 \subsubsection{Results on the reference method}
 \label{sec:results_reference}
-\noindent Fig.~\ref{fig:offsets_tree_1} shows the offset of all sensors with respect to the 39606 reference. As it can be noticed, the dispersion of the offsets is compatible with 0.1 K, the value quoted by the vendor. Fig.~\ref{fig:offsets_tree_2}-left shows the distribution of the repeatability of the computed calibration constants after applying the different corrections, showing an average value below 1 mK.
+\noindent Fig.~\ref{fig:offsets_tree_1} shows the offset of all sensors with respect to the 39606 reference. As it can be noticed, the dispersion of the offsets is compatible with 0.1 K, the value quoted by the vendor. Fig.~\ref{fig:offsets_tree_2}-left shows the distribution of the repeatability of the computed calibration constants after applying the time-walk correction, showing an average value below 1 mK. Comparing it with Fig.~\ref{fi:CAL_rms_1r}, it can be noticed that the mean of the distribution has increased from 0.63 to 0.80 mK due to the error propagation of the correction applied.
 
 %---------------------------------------------------
 \subsubsection{Results on the tree method}
-\noindent The offsets are computed in this case with respect to an arbitrary reference among all sensors being calibrated. Selecting as reference a sensor present in the third round (see Fig.~\ref{fi:CAL_sequence}) minimizes the number of operations required to compute the offsets, thereby reducing the associated uncertainty. Sensor 39645 was chosen as reference. Fig.~\ref{fig:offsets_tree_2}-right shows the distribution of the repeatability of the computed calibration constants, the mean of which is slightly below the one obtained for the reference method. Thus, it is confirmed that despite the higher number of intermediate sensors to relate any two sensors, the additional uncertainty introduced by the time walk correction makes the tree method superior to the reference method. Moreover, the reference method introduces a ---not yet known--- systematic error associated to the time wall correction model.
+\noindent The offsets are computed in this case with respect to an arbitrary reference among all sensors being calibrated. Selecting as reference a sensor present in the third round (see Fig.~\ref{fi:CAL_sequence}) minimizes the number of operations required to compute the offsets, thereby reducing the associated uncertainty. Sensor 39645 was chosen as reference. Fig.~\ref{fig:offsets_tree_2}-right shows the distribution of the repeatability of the computed calibration constants, the mean of which is slightly below the one obtained for the reference method. Thus, it is confirmed that despite the higher number of intermediate sensors to relate any two sensors, the additional uncertainty introduced by the time walk correction makes the tree method superior to the reference method. Moreover, the reference method introduces a ---not yet known--- systematic error associated to the time-walk correction model.
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.9\textwidth]{images/figure_13.pdf}}
+{\includegraphics[width=0.9\textwidth]{./figure_13.pdf}}
 \caption{Offset of each sensor with respect to reference sensor 39606 using the reference method.}
 \label{fig:offsets_tree_1}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.45\textwidth]{images/figure_14_a.pdf}}
-{\includegraphics[width=0.45\textwidth]{images/figure_14_b.pdf}}
+{\includegraphics[width=0.45\textwidth]{./figure_14_a.pdf}}
+{\includegraphics[width=0.45\textwidth]{./figure_14_b.pdf}}
 \caption{Left: repeatability distribution for the reference method. Right: repeatability distribution for tree method.}
 \label{fig:offsets_tree_2}
 \end{figure}
@@ -188,8 +188,8 @@ By construction, the result of subtracting the calibration constants obtained in
 
 \begin{figure}[htbp]
 \centering
-{\includegraphics[width=0.49\textwidth]{images/figure_15_b.pdf}}
-{\includegraphics[width=0.49\textwidth]{images/figure_15_a.pdf}}
+{\includegraphics[width=0.49\textwidth]{./figure_15_b.pdf}}
+{\includegraphics[width=0.49\textwidth]{./figure_15_a.pdf}}
 \caption{$\Delta T_{45,06}$ computed through all sensors of the second round of the calibration procedure. Left: not applying corrections. Right: applying corrections. A clear improvement is obtained using the corrections on the reference sensor. The red line represents the expected value of this calibration constant.}
 \label{fig:crosscheck}
 \end{figure}
